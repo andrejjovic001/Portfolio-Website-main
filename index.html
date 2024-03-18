@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,600&family=Roboto:ital,wght@0,500;0,700;1,400&family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ffff251593.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Portfolio website</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-container">
+          <a class="logo" href="#section--1"> Andrej </a>
+
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link active" href="#Home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#About">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Services">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Testimonials">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+
+          <li class="toggle-moon">
+            <i class="bx bx-moon"></i>
+          </li>
+          <i class="fa-solid fa-bars menu-btn"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="all--section home--section" id="Home">
+      <div class="container">
+        <div class="introduc">
+          <h2>Hello, I <span class="span-text">am</span></h2>
+          <h1>Andrej Jović</h1>
+          <h3>
+            <span class="span-text span-text1">Front</span
+            ><span class="span-text2">-End Developer</span
+            ><span class="blinkingLine">|</span>
+          </h3>
+          <a href="#Contact"
+            ><button class="btn home-btn">
+              Contact me
+              <i class="fa-solid fa-phone" style="color: #ffffff"></i></button
+          ></a>
+
+          <div class="social-media">
+            <a href="https://www.instagram.com/_andrej.jovic_/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <i class="fa-brands fa-x-twitter"></i>
+            <a href="https://www.linkedin.com/in/andrej-jovic/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <i class="fa-brands fa-discord"></i>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="center"></div>
+          <img class="icon html-icon" src="img/html-5.png" alt="" />
+          <img class="icon css-icon" src="img/css-3 (1).png" alt="" />
+          <img class="icon js-icon" src="img/java-script.png" alt="" />
+          <img class="icon webflow-icon" src="img/webflow.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="all--section about--section section--hidden" id="About">
+      <div class="container">
+        <img class="about-me-img" src="img/about-me.jpg" alt="" />
+
+        <div class="about-me-inf">
+          <h2>About <span>Me</span></h2>
+          <h4>I am here to help your next project!</h4>
+          <p>
+            Hi, I'm Andrej. I am a 22-year-old frontend developer focused on
+            writing elegant and efficient code. With proficiency in HTML, CSS,
+            JavaScript, React and Webflow, I enjoy designing, developing and
+            optimizing websites that provide exceptional user and visual
+            experiences. I am really motivated to advance and learn new things
+            as I build my professional career. I am willing to work hard to
+            build new projects with my team.
+          </p>
+          <button class="btn about-btn">
+            Download CV <img src="img/download.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="all--section services--section section--hidden"
+      id="Services"
+    >
+      <div class="container">
+        <h2>My <span>Services</span></h2>
+        <h5>What I offer</h5>
+        <div class="services-grid">
+          <div class="services-item">
+            <i class="fa-brands fa-html5" style="color: #754ef9"></i>
+            <h3>Html5</h3>
+            <p>
+              The HyperText Markup Language or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+            </p>
+            <button class="btn services-btn" data-category="html">
+              Read more <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="modal-window" data-category="html">
+              <div class="close-btn">X</div>
+              <h3>-HTML5</h3>
+              <ul>
+                <li>
+                  <p>
+                    HTML is the foundation of every website and the building
+                    block of the digital world. My understanding of HTML goes
+                    beyond basic tags. I work with semantic elements to ensure
+                    that each page is well structured and accessible. Code
+                    verification and adherence to best practices are an
+                    essential part of my work process.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <i class="fa-brands fa-css3-alt" style="color: #754ef9"></i>
+            <h3>Css3</h3>
+            <p>
+              Cascading Style Sheets (CSS) is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language such as HTML or XML
+            </p>
+            <button class="btn services-btn" data-category="css">
+              Read more <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="modal-window" data-category="css">
+              <div class="close-btn">X</div>
+              <h3>-CSS3</h3>
+              <ul>
+                <li>
+                  <p>
+                    Creative design and styling are key elements of any website.
+                    CSS allows me to turn conceptual designs into visually
+                    appealing realities. My skills in CSS are quite broad, from
+                    creating responsive layouts to working with animations. I
+                    have a deep understanding of cascading and selectors to
+                    design websites that leave a strong impression.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <i class="fa-brands fa-square-js" style="color: #754ef9"></i>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript, often abbreviated as JS, is a programming language
+              that is one of the core technologies of the World Wide Web,
+              alongside HTML and CSS.
+            </p>
+            <button class="btn services-btn" data-category="js">
+              Read more <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="modal-window" data-category="js">
+              <div class="close-btn">X</div>
+              <h3>-JAVASCRIPT</h3>
+              <ul>
+                <li>
+                  <p>
+                    To turn web pages into interactive applications, I use
+                    JavaScript. I know the basics of the language and deeper
+                    concepts such as DOM manipulation and AJAX for communication
+                    with the server. I create dynamic effects, handle events and
+                    ensure a seamless user experience.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <i class="fa-brands fa-solid fa-w" style="color: #754ef9"></i>
+            <h3>Webflow</h3>
+            <p>
+              Webflow is a SaaS application that allows designers to build
+              responsive websites with browser-based visual editing software.
+            </p>
+            <button class="btn services-btn" data-category="webflow">
+              Read more <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="modal-window" data-category="webflow">
+              <div class="close-btn">X</div>
+              <h3>-WEBFLOW</h3>
+              <ul>
+                <li>
+                  <p>
+                    Webflow is my secret tool for quickly creating prototypes
+                    and websites. I use it to speed up the design and
+                    prototyping process. Regardless of whether I'm working on a
+                    website from scratch or optimizing an existing one, Webflow
+                    allows me to quickly realize creative visions.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="all--section portfolio--section section--hidden"
+      id="Portfolio"
+    >
+      <div class="container">
+        <h2>Portfolio</h2>
+        <h5>Some of my projects</h5>
+        <h6>Some projects are only available for desktop</h6>
+
+        <div class="portfolio-grid1">
+          <div class="work-item">
+            <img src="img/work-5.jpg" alt="" />
+
+            <div class="layer">
+              <h3>NFT marketplace</h3>
+              <p>
+                This project was created with the aim of providing a platform
+                for trading NFT artworks. Our platform enables artists to
+                create, sell and share their unique digital works.
+              </p>
+              <a
+                href="https://nft-marketplace-site.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-6.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Bank Website</h3>
+              <p>
+                This project represents a web platform for the bank that
+                provides a simple interface in order to offer clients fast and
+                secure access to all banking services.
+              </p>
+              <a href="https://bank-webiste.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-grid2">
+          <div class="work-item">
+            <img src="img/work-8.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Blog Website</h3>
+              <p>Website made in webflow for writing and posting blogs</p>
+              <a href="https://cms-sajt-32fc1e.webflow.io/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-7.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Clinic Website</h3>
+              <p>
+                Website designed in webflow with animations and a nice interface
+              </p>
+              <a
+                href="https://andrej-22s-awesome-site.webflow.io/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-9.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Duracell prize game</h3>
+              <p>
+                Website made for the purpose of a prize game with animations and
+                a nice interface
+              </p>
+              <a
+                href="https://duracell-nagradna-igra.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-3.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Rolling Dice</h3>
+              <p>
+                The dice rolling app is designed to bring excitement and fun to
+                all board game lovers.
+              </p>
+              <a href="https://rollingthedice-game.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-2.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Bank App</h3>
+              <p>
+                The application provides an interface for viewing account
+                balances, transferring funds, taking loans and other key banking
+                functionalities.
+              </p>
+              <a href="https://mybank1-app.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work-item">
+            <img src="img/work-1.jpg" alt="" />
+
+            <div class="layer">
+              <h3>Social network</h3>
+              <p>
+                The social network application enables the creation of new
+                users, status sharing, liking, commenting and other
+                functionalities.
+              </p>
+              <a
+                href="https://drustvenamreza.netlify.app/hexa.html"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="all--section testimonials--section section--hidden"
+      id="Testimonials"
+    >
+      <div class="container">
+        <h2>Testimonials</h2>
+        <h5>What clients say</h5>
+
+        <div class="testimonial-slider-wrapper">
+          <div class="testimonial-slider">
+            <div class="slide">
+              <img src="img/client1.jpg" alt="" />
+
+              <h3>Lucas Smith</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                suscipit temporibus quam, voluptatem quis omnis. Facilis magni
+                laboriosam fugit.
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="img/client3.jpg" alt="" />
+
+              <h3>Ana Willson</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                suscipit temporibus quam, voluptatem quis omnis. Facilis magni
+                laboriosam fugit.
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="img/client4.jpg" alt="" />
+
+              <h3>Oliver Perez</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                suscipit temporibus quam, voluptatem quis omnis. Facilis magni
+                laboriosam fugit.
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="img/client2.jpg" alt="" />
+
+              <h3>Jackson Lee</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                suscipit temporibus quam, voluptatem quis omnis. Facilis magni
+                laboriosam fugit.
+              </p>
+            </div>
+
+            <div class="slide">
+              <img src="img/client5.jpg" alt="" />
+
+              <h3>Emma Martinez</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                suscipit temporibus quam, voluptatem quis omnis. Facilis magni
+                laboriosam fugit.
+              </p>
+            </div>
+          </div>
+
+          <i class="arrow left-arrow fa-solid fa-arrow-left"></i>
+          <i class="arrow right-arrow fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="all--section contact--section section--hidden" id="Contact">
+      <div class="container">
+        <h2>Contact <span>Me</span></h2>
+        <h5>Get in Touch</h5>
+
+        <div class="form-conatiner">
+          <div class="contact-information-wrapper">
+            <div class="contact-information">
+              <i class="fa-solid fa-phone contact-icon"></i>
+
+              <div>
+                <h3>Call Me</h3>
+                <h4>+387 65/379-525</h4>
+              </div>
+            </div>
+
+            <div class="contact-information">
+              <i class="fa-regular fa-envelope contact-icon"></i>
+
+              <div>
+                <h3>Email</h3>
+                <h4>andrej.jovic01@gmail.com</h4>
+              </div>
+            </div>
+
+            <div class="contact-information">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+
+              <div>
+                <h3>Location</h3>
+                <h4>Banjaluka - BiH</h4>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="contact-content">
+              <input
+                placeholder="Name"
+                type="text"
+                class="contact-input"
+                required
+              />
+            </div>
+
+            <div class="contact-content">
+              <input
+                placeholder="Email"
+                type="email"
+                class="contact-input"
+                required
+              />
+            </div>
+
+            <div class="contact-content">
+              <input placeholder="Project" type="text" class="contact-input" />
+            </div>
+
+            <div class="contact-content contact-msg">
+              <textarea
+                placeholder="Message"
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact-input"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn contact-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;Copyright</p>
+    </footer>
+
+    <a href="#" class="scrollUp">
+      <i class="bx bxs-up-arrow-square"></i>
+    </a>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>

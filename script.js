@@ -366,7 +366,7 @@ moonIcon.addEventListener("click", () => {
 
 // Download CV
 const downloadCV = document.querySelector(".about-btn");
-const cvFile = "andrej jović-CV.pdf";
+const cvFile = "andrej jović.pdf";
 
 downloadCV.addEventListener("click", () => {
   const downloadLink = document.createElement("a");
